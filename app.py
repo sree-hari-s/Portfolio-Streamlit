@@ -24,7 +24,7 @@ SOCIAL_MEDIA = {
     # "Instagram": "https://youtube.com/c/codingisfun",
     "LinkedIn": "https://linkedin.com",
     "GitHub": "https://github.com/sree-hari-s",
-    "Twitter": "https://twitter.com/sreehari",
+    #"Twitter": "https://twitter.com/sreehari",
 }
 PROJECTS = {
     "🏆 Product Recommendation System for E-commerce": "https://www.linkedin.com/feed/update/urn:li:activity:7121068898635968512/",
@@ -37,7 +37,7 @@ PROJECTS = {
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 
-# --- LOAD CSS, PDF & PROFIL PIC ---
+# --- LOAD CSS, PDF & PROFILE PIC ---
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
@@ -76,7 +76,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 # st.subheader("Experience & Qualifications")
 # st.write(
 #     """
-# - ✔️ 7 Years expereince extracting actionable insights from data
+# - ✔️ 7 Years experience extracting actionable insights from data
 # - ✔️ Strong hands on experience and knowledge in Python and Excel
 # - ✔️ Good understanding of statistical principles and their respective applications
 # - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
@@ -102,7 +102,16 @@ st.write("\n")
 st.subheader("Work History")
 st.write("---")
 
-# --- JOB 1
+# --- JOB 
+st.write("🚧", "**Machine Learning Intern | Feynn Labs **")
+st.write("09/2023 - 12/2023")
+st.write(
+    """
+- ► As a SQL Developer, I designed ER diagrams, streamlined table schemas, and optimized stored procedures. I also proficiently hosted Node.js, .NET, and Reactapplications using IIS, ensuring seamless integration between front-end and back-end systems.
+"""
+)
+
+# --- JOB 
 st.write("🚧", "**SQL DEVELOPER | TL Technologies Pvt Ltd**")
 st.write("04/2023 - 06/2023")
 st.write(
@@ -111,7 +120,7 @@ st.write(
 """
 )
 
-# --- JOB 2
+# --- JOB 
 st.write('\n')
 st.write("🚧", "**Data Science Intern | Brototype**")
 st.write("10/2022 - 03/2023")
