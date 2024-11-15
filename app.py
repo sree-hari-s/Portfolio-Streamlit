@@ -87,6 +87,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 # --- SKILLS ---
 st.write("\n")
 st.subheader("Hard Skills")
+st.write("---")
 st.write(
     """
 - 👩‍💻 **Programming:** Python (Django,Pandas,Scikit-learn), SQL
