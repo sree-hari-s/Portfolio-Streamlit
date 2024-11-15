@@ -13,5 +13,7 @@ jobs:
 
       - name: Create empty commit
         run: |
+          git config user.name 'sree-hari-s'
+          git config user.email 'sreeharis1999@gmail.com'
           git commit --allow-empty -m "Trigger build"
           git push origin main
