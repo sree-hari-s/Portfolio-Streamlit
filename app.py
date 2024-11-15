@@ -89,10 +89,11 @@ st.write("\n")
 st.subheader("Hard Skills")
 st.write(
     """
-- 👩‍💻 Programming: Python (Django,Pandas,Scikit-learn), SQL
-- 📊 Data Visualization: Matplotlib,Seaborn,Plotly,PowerBi
-- 📚 Modeling: Logistic regression, Linear regression, Decision trees
-- 🗄️ Databases: MySQL,MSSQL
+- 👩‍💻 **Programming:** Python (Django,Pandas,Scikit-learn), SQL
+- ⚙️ **Automation:** Automation Anywhere,BluePrism,Power Automate
+- 📊 **Data Visualization:** Matplotlib,Seaborn,Plotly,PowerBi
+- 📚 **Modeling:** Logistic regression, Linear regression, Decision trees
+- 🗄️ **Databases:** MySQL,MSSQL
 """
 )
 
@@ -103,13 +104,24 @@ st.subheader("Work History")
 st.write("---")
 
 # --- JOB 
-st.write("🚧", "**Machine Learning Intern | Feynn Labs **")
+st.write("🚧", "**Associate Automation Engineer | Fournxt**")
+st.write("02/2024 - Present")
+st.write(
+    """
+- ► Designing and providing Automation solutions for clients in their business processes using RPA tools like Automation Anywhere and Blueprism.
+"""
+)
+st.write(" ")
+
+# --- JOB 
+st.write("🚧", "**Machine Learning Intern | Feynn Labs**")
 st.write("09/2023 - 12/2023")
 st.write(
     """
 - ► As a SQL Developer, I designed ER diagrams, streamlined table schemas, and optimized stored procedures. I also proficiently hosted Node.js, .NET, and Reactapplications using IIS, ensuring seamless integration between front-end and back-end systems.
 """
 )
+st.write(" ")
 
 # --- JOB 
 st.write("🚧", "**SQL DEVELOPER | TL Technologies Pvt Ltd**")
@@ -119,6 +131,7 @@ st.write(
 - ► As a SQL Developer, I designed ER diagrams, streamlined table schemas, and optimized stored procedures. I also proficiently hosted Node.js, .NET, and Reactapplications using IIS, ensuring seamless integration between front-end and back-end systems.
 """
 )
+st.write(" ")
 
 # --- JOB 
 st.write('\n')
@@ -139,6 +152,7 @@ st.write("---")
 # --- Education 1
 st.write("📖", "**Electrical and Electronics Engineering | College of Engineering Trivandrum (CET)**")
 st.write("08/2017 - 12/2021")
+st.write(" ")
 
 # --- Education 2
 st.write("📖", "**Advanced Certification In DataScience and AI | Intellipaat**")
