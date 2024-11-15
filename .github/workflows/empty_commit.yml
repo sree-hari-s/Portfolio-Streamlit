@@ -1,21 +1,17 @@
-name: Empty Commit
+name: Create Empty Commit
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:      # Allows manual triggering of the workflow
+  workflow_dispatch:
 
 jobs:
-  commit:
+  empty-commit:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Make empty commit
+      - name: Create empty commit
         run: |
-            git config user.name 'sree-hari-s'
-            git config user.email 'sreeharis1999@gmail.com'
-            git commit --allow-empty -m "chore: daily empty commit"
-            git push
+          git commit --allow-empty -m "Trigger build"
+          git push origin main
