@@ -114,22 +114,22 @@ st.write(
 )
 st.write(" ")
 
-# --- JOB 
-st.write("🚧", "**Machine Learning Intern | Feynn Labs**")
-st.write("09/2023 - 12/2023")
-st.write(
-    """
-- ► As a SQL Developer, I designed ER diagrams, streamlined table schemas, and optimized stored procedures. I also proficiently hosted Node.js, .NET, and Reactapplications using IIS, ensuring seamless integration between front-end and back-end systems.
-"""
-)
-st.write(" ")
+# # --- JOB 
+# st.write("🚧", "**Machine Learning Intern | Feynn Labs**")
+# st.write("09/2023 - 12/2023")
+# st.write(
+#     """
+# - ► As a SQL Developer, I designed ER diagrams, streamlined table schemas, and optimized stored procedures. I also proficiently hosted Node.js, .NET, and React applications using IIS, ensuring seamless integration between front-end and back-end systems.
+# """
+# )
+# st.write(" ")
 
 # --- JOB 
 st.write("🚧", "**SQL DEVELOPER | TL Technologies Pvt Ltd**")
 st.write("04/2023 - 06/2023")
 st.write(
     """
-- ► As a SQL Developer, I designed ER diagrams, streamlined table schemas, and optimized stored procedures. I also proficiently hosted Node.js, .NET, and Reactapplications using IIS, ensuring seamless integration between front-end and back-end systems.
+- ► As a SQL Developer, I designed ER diagrams, streamlined table schemas, and optimized stored procedures. I also proficiently hosted Node.js, .NET, and React applications using IIS, ensuring seamless integration between front-end and back-end systems.
 """
 )
 st.write(" ")
