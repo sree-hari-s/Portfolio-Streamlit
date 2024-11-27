@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Ping Streamlit App
         run: |
-          curl -s -o /dev/null -w "%{http_code}" https://your-streamlit-app-url.com || echo "App unreachable"
+          curl -s -o /dev/null -w "%{http_code}" https://sreehari-s.streamlit.app/ || echo "App unreachable"
