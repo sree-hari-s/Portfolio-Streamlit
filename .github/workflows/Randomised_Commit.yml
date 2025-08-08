@@ -1,0 +1,34 @@
+name: Random App.py Touch to Keep Streamlit Awake
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:
+
+jobs:
+  maybe-touch-app:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Decide randomly whether to commit
+        id: random-check
+        run: |
+          SHOULD_COMMIT=$((RANDOM % 2))
+          echo "commit=$SHOULD_COMMIT" >> $GITHUB_OUTPUT
+
+      - name: Checkout code
+        if: steps.random-check.outputs.commit == '1'
+        uses: actions/checkout@v4
+
+      - name: Modify app.py (same value)
+        if: steps.random-check.outputs.commit == '1'
+        run: |
+          sed -i 's/^NAME = .*/NAME = "Sreehari S"/' app.py
+
+      - name: Commit and push
+        if: steps.random-check.outputs.commit == '1'
+        run: |
+          git config user.name 'sree-hari-s'
+          git config user.email 'sreeharis1999@gmail.com'
+          git commit -am "Touch app.py to keep Streamlit awake"
+          git push origin main
